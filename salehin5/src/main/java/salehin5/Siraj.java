@@ -277,66 +277,66 @@ public class Siraj {
 			System.out.println(e);
 		}
 	
-//		try {
-//			WebElement Configure = new WebDriverWait(driver, Duration.ofSeconds(100))
-//			        .until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='CONFIGURE']")));
-//		
-//			Configure.click();
-//
-//
-//			WebElement StudySetup = new WebDriverWait(driver, Duration.ofSeconds(100))
-//					        .until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Study Setup']")));
-//			StudySetup.click();
-//
-//				
-//			WebElement Studies = new WebDriverWait(driver, Duration.ofSeconds(100))
-//					        .until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Studies']")));
-//			Studies.click();	
-//					
-//					
-//			WebElement Search = driver.findElement(By.xpath("//*[@id=\"portal-grid-page-content\"]/div[3]/div[2]/input"));
-//			Search.sendKeys("Dry");
-//			Thread.sleep(5000);
-//			driver.findElement(By.xpath("//span[normalize-space()='TEST Dry- Virgil Study Configuration-01']")).click();
-//			
-//			driver.findElement(By.xpath("//a[normalize-space()='Custom']")).click();
-//			driver.findElement(By.xpath("//div[@data-text-id='Models.studyCustom.assessmentStartDateDisable']//span")).click();
-//			driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/section[1]/div[1]/div[3]/div[1]/h4[1]")).click();
-//			
-//			WebElement ModalityTable = driver.findElement(By.xpath("//*[@id=\"collapse_2\"]/div/div[2]/div/div/div[2]/table"));
-//			
-//			
-//			
-//			int ModalityOptionsReasonlen = ModalityTable.findElements(By.tagName("span")).size();
-//			String EChangeModalityOptionsBeforeXpath = "//*[@id=\"collapse_2\"]/div/div[2]/div/div/div[2]/table/tbody/tr[";
-//			String EChangeModalityOptionsAfterXpath = "]/td[1]/span";
-//			String EChangeModalityOptions = "";
-//			for(int i = 1 ; i<=ModalityOptionsReasonlen ; i++) {
-//				
-//				String xpath = EChangeModalityOptionsBeforeXpath+i+EChangeModalityOptionsAfterXpath;
-//				WebElement el = driver.findElement(By.xpath(xpath));
-//				EChangeModalityOptions += el.getText()+"\n";
-//				
-//				
-//			}
-//			System.out.println("Reasons : \n"+EChangeModalityOptions);
-//			
-//			int ModalityOptionsReasonCoommentlen = ModalityTable.findElements(By.tagName("tr")).size();
-//			String EChangeModalityCommentsBeforeXpath = "//*[@id=\"collapse_2\"]/div/div[2]/div/div/div[2]/table/tbody/tr[";
-//			String EChangeModalityCommentsAfterXpath = "]/td[2]";
-//			String EChangeModalityComments = "";
-//			
-//			for(int i=1; i<=ModalityOptionsReasonCoommentlen ; i++) {
-//				String xpath = EChangeModalityCommentsBeforeXpath+i+EChangeModalityCommentsAfterXpath;
-//				WebElement el = driver.findElement(By.xpath(xpath));
-//				EChangeModalityComments += el.getText()+"\n";
-//			}
-//			System.out.println("Reason comments : \n"+EChangeModalityComments);
-//
-//		}catch(Exception e) {
-//			System.out.println(e);
-//			driver.close();
-//		}
+		try {
+			WebElement Configure = new WebDriverWait(driver, Duration.ofSeconds(100))
+			        .until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='CONFIGURE']")));
+		
+			Configure.click();
+
+
+			WebElement StudySetup = new WebDriverWait(driver, Duration.ofSeconds(100))
+					        .until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Study Setup']")));
+			StudySetup.click();
+
+				
+			WebElement Studies = new WebDriverWait(driver, Duration.ofSeconds(100))
+					        .until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Studies']")));
+			Studies.click();	
+					
+					
+			WebElement Search = driver.findElement(By.xpath("//*[@id=\"portal-grid-page-content\"]/div[3]/div[2]/input"));
+			Search.sendKeys("Dry");
+			Thread.sleep(5000);
+			driver.findElement(By.xpath("//span[normalize-space()='TEST Dry- Virgil Study Configuration-01']")).click();
+			
+			driver.findElement(By.xpath("//a[normalize-space()='Custom']")).click();
+			driver.findElement(By.xpath("//div[@data-text-id='Models.studyCustom.assessmentStartDateDisable']//span")).click();
+			driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/section[1]/div[1]/div[3]/div[1]/h4[1]")).click();
+			
+			WebElement ModalityTable = driver.findElement(By.xpath("//*[@id=\"collapse_2\"]/div/div[2]/div/div/div[2]/table"));
+			
+			
+			
+			int ModalityOptionsReasonlen = ModalityTable.findElements(By.tagName("span")).size();
+			String EChangeModalityOptionsBeforeXpath = "//*[@id=\"collapse_2\"]/div/div[2]/div/div/div[2]/table/tbody/tr[";
+			String EChangeModalityOptionsAfterXpath = "]/td[1]/span";
+			String EChangeModalityOptions = "";
+			for(int i = 1 ; i<=ModalityOptionsReasonlen ; i++) {
+				
+				String xpath = EChangeModalityOptionsBeforeXpath+i+EChangeModalityOptionsAfterXpath;
+				WebElement el = driver.findElement(By.xpath(xpath));
+				EChangeModalityOptions += el.getText()+"\n";
+				
+				
+			}
+			System.out.println("Reasons : \n"+EChangeModalityOptions);
+			
+			int ModalityOptionsReasonCoommentlen = ModalityTable.findElements(By.tagName("tr")).size();
+			String EChangeModalityCommentsBeforeXpath = "//*[@id=\"collapse_2\"]/div/div[2]/div/div/div[2]/table/tbody/tr[";
+			String EChangeModalityCommentsAfterXpath = "]/td[2]";
+			String EChangeModalityComments = "";
+			
+			for(int i=1; i<=ModalityOptionsReasonCoommentlen ; i++) {
+				String xpath = EChangeModalityCommentsBeforeXpath+i+EChangeModalityCommentsAfterXpath;
+				WebElement el = driver.findElement(By.xpath(xpath));
+				EChangeModalityComments += el.getText()+"\n";
+			}
+			System.out.println("Reason comments : \n"+EChangeModalityComments);
+
+		}catch(Exception e) {
+			System.out.println(e);
+			driver.close();
+		}
 	}
 	
 	public void close() {
