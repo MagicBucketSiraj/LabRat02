@@ -341,8 +341,9 @@ public class Siraj {
 	
 	public void close() {
 		
-		//driver.close();
+		driver.close();
 		driver.quit();
+		
 	}
 	public static void main(String[] args) {
 		
